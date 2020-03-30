@@ -1,0 +1,135 @@
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:#aeccdd;
+}
+
+.container{
+	
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header{
+	background:rgb(119, 149, 163)#35434a;
+	border-bottom:#448AFF 3px solid;
+	height:120px;
+	width:100%;
+	padding-top:30px;
+
+}
+
+.main-header{
+			text-align:center;
+			
+			height:100px;
+			width:100%;
+			margin:0px;
+		}
+#brandname{
+	float:left;
+	font-size:50px;
+	color: rgb(29, 27, 27);
+	margin: 2px;
+}
+
+header h2{
+	text-align:right;
+	color:rgb(20, 121, 168);
+
+}
+
+
+
+.btn-info {background-color: rgb(76, 95, 156);
+	border-radius: 5px;
+	font-size: 20px;
+	height:40px;
+	width:100px;} /* Blue */
+.btn-info:hover {background: #5676df;}
+
+
+.results{
+	border-radius: 15px 50px;
+    font-size: 20px;
+    padding: 5spx; 
+    width: 200px;
+    height: 150px;
+}
+
+.block {
+	float: top;
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 28px;
+	font-size: 30px;
+	cursor: pointer;
+	text-align: center;
+  }
+  .relative{
+
+	position: absolute;
+  	top: 300px;
+  	right: 300px;
+  	
+  }
+
+  .relative_1{
+
+	position: absolute;
+  	top: 100px;
+  	right: 850px;
+  	
+  }
+  .block_1 {
+	float: top;
+	display: block;
+	width: 40%;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+  }
+body {margin:0;}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.block_front {
+	float: top;
+	display: block;
+	width: 10%;
+	border: none;
+	background-color: rgb(68, 140, 173);
+	color: white;
+	padding: 14px 28px;
+	font-size: 30px;
+	cursor: pointer;
+	text-align: center;
+  }

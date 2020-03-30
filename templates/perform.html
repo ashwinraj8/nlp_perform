@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+    <script type="text/javascript">
+
+		function showImage(){
+			document.getElementById('loadingImage').style.visibility="visible";
+		}
+		
+	</script>
+</head>
+<body>
+        <h1>HERE IS THE PERFORMNACE holaaaaaaaa</h1>
+
+
+
+        <div class="relative_1">
+            <button class="block_1" value="Show Graph" onclick="showImage();">Show Graph</button>
+               <img id="loadingImage" src="{{ url_for('static', filename='images/performance.png')}}" style="visibility:hidden"/>
+    
+        </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	
+
+	<script type="text/javascript">
+
+		function showImage(){
+			document.getElementById('loadingImage').style.visibility="visible";
+		}
+		
+	</script>
+</head>
+
+
+<body>
+	<div class="navbar">
+		<a href="#home">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Contact</a>
+	 </div>
+	 <br>
+	 <br>
+	<header>
+		<div class="container main-header">
+		<div id="brandname">
+			Faculty Performance Analysis Using NLP.
+		
+	</header>
+	</div>
+		<h2>YOUR REVIEW</h2>
+
+	</div>
+
+	<div class="ml-container">
+
+		
+		<form action="{{ url_for('predict')}}" method="POST">
+		<h2>VLSI</h2>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="6" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="submit">
+		<br>
+		<br>
+		<form action="{{ url_for('predict')}}" method="POST">
+			<h2>PWRELEC</h2>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea name="message" rows="6" cols="50"></textarea>
+			<br/>
+	
+			<input type="submit" class="btn-info" value="submit">
+		<br>
+		<br>
+		<form action="{{ url_for('predict')}}" method="POST">
+			<h2>DSP</h2>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea name="message" rows="6" cols="50"></textarea>
+			<br/>
+	
+			<input type="submit" class="btn-info" value="submit">
+	
+
+			
+		
+	</form>
+		
+	</div>
+
+
+	<div class="results">
+
+
+		
+		{% if prediction == 5%}
+		<h2 style="color:red;">{{prediction}}</h2>
+
+		{% elif prediction == 1%}
+		<h2 style="color:blue;">{{prediction}}</h2>
+		{% elif prediction == 2%}
+		<h2 style="color:blue;">{{prediction}}</h2>
+		{% elif prediction == 3%}
+		<h2 style="color:blue;">{{prediction}}</h2>
+		{% elif prediction == 4%}
+		<h2 style="color:blue;">{{prediction}}</h2>
+		{% endif %}
+		<br>
+
+		
+	</div>
+    	
+	<div class="relative">
+		   
+		<form action="{{ url_for('member')}}">
+			<button class="block" type="submit">See Performance</button>
+		 </form>
+
+	</div>
+
+	<br>
+	<div>
+		
+	</div>
+
+	
+
+	
+	
+
+</body>
+</html>
